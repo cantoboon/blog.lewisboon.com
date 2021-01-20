@@ -1,0 +1,6 @@
+baseURL: "http://www.boon.house/"
+languageCode: "en-gb"
+title: "Boon House"
+
+params:
+  homeText: "Hello world! This in my blog"
