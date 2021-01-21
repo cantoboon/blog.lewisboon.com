@@ -1,27 +1,8 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		{{ $css := "css/bootstrap.min.css" | absURL}}
-		<link rel="stylesheet" href="{{ $css }}">
-		<title>{{.Title}}</title>
-	</head>
-	<body>
-		<div class="container">
-			<main id="main">
-				<header class="homepage-header">
-					<h1>{{.Title}}</h1>
-				</header>
-				<div class="homepage-content">
-					<p class="font-125">{{ .Site.Params.homeText | markdownify }}</p>
-				</div>
-				<div>
-					{{ range first 10 .Site.RegularPages }}
-						{{ .Render "summary" }}
-					{{ end }}
-				</div>
-			</main>
-		</div>
-	</body>
-</html>
+{{ define "main" }}
+
+<div id="home-jumbotron" class="jumbotron text-center">
+  <h1>{{ .Site.Title }}</h1>
+  <p class="font-125">{{ .Site.Params.homeText | markdownify }}</p>
+</div>
+
+{{ end }}
