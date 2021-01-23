@@ -1,6 +1,6 @@
-baseURL: "http://www.boon.house/"
+baseURL: "https://www.labooner.com/"
 languageCode: "en-gb"
-title: "Boon House"
+title: "labooner blog"
 
 permalinks:
   blog: "/:filename/"
