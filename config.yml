@@ -26,3 +26,11 @@ taxonomies:
 params:
   dateFormat: Jan 2, 2006
   homeText: "Hello world! This in my blog"
+
+markup:
+  highlight:
+    lineNos: true
+    anchorLineNos: true
+    style: github
+    noClasses: true
+    
