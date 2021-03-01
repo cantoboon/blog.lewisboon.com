@@ -32,5 +32,5 @@ markup:
     lineNos: true
     anchorLineNos: true
     style: github
-    noClasses: true
+    noClasses: false
     

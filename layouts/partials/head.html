@@ -4,6 +4,9 @@
     {{ hugo.Generator }}
     {{ $css := "css/bootstrap.min.css" | absURL }}
     <link rel="stylesheet" href="{{ $css }}">
+    {{ $syntaxCss := "css/syntax.css" | absURL }}
+    <link rel="stylesheet" href="{{ $syntaxCss }}">
+
     {{ $title := print .Title " | " .Site.Title }}
     {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
     <title>{{ $title }}</title>
