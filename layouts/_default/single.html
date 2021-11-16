@@ -1,5 +1,10 @@
 {{ define "main" }}
 
-{{ partial "content.html" . }}
-
+<div class="container-sm">
+    <main id="main" class="col-md-12 mt-4 mb-4">
+        <h4>{{ .Title }}</h4>
+        {{ partial "date-and-tags.html" . }}
+        {{ partial "content.html" . }}
+    </main>
+</div>
 {{ end }}

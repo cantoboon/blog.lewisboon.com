@@ -4,10 +4,11 @@
   <body>
     {{ partial "nav.html" . }}
     <div class="container">
-      <main id="main">
-       {{ block "main" . }}{{ end }}
-      </main>
+      {{/*  <main id="main" class="col-md-8"></main>  */}}
+        {{ block "main" . }}{{ end }}
+      {{/*  </main>  */}}
     </div>
+    {{/* Adds syntax highlighting via feather.js */}}
     {{ partial "script.html" }}
   </body>
 </html>
