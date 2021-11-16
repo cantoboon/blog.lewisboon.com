@@ -34,6 +34,6 @@ This Password Rule says a password:
 I've created a [CodeSandbox demo](https://codesandbox.io/s/password-rules-demo-029h5) of the above. A quick test
 shows that 1Password honours the min/max lengths. Hopefully the most popular Password Managers also honour it.
 
-The [Password Rules Generator(https://developer.apple.com/password-rules/) helps you craft
+The [Password Rules Generator](https://developer.apple.com/password-rules/) helps you craft
 the somewhat esoteric syntax. It also lets you download password examples for you to build into your tests to prove
 that both your front and backends can accept the passwords.
