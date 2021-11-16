@@ -17,9 +17,23 @@ your password requirements and covers a number of common patterns:
 - Min and max lengths
 - Max consecutive characters
 
-The Password Rules Generator linked above (and [here](https://developer.apple.com/password-rules/)) helps you craft
+```html
+<input
+    type="password"
+    passwordrules="minlength: 20; required: lower; required: upper; required: digit; required: [-]; allowed: ascii-printable;"
+/>
+```
+
+This Password Rule says a password:
+
+- Has to have a min length of 20
+- Has to have a lower, upper, digit, and the `-` (hyphen) character
+- Can optionally include ascii-printable characters
+    - By default, if you do not include `allowed`, you will be limited to only the types listed by `required`
+
+I've created a [CodeSandbox demo](https://codesandbox.io/s/password-rules-demo-029h5) of the above. A quick test
+shows that 1Password honours the min/max lengths. Hopefully the most popular Password Managers also honour it.
+
+The [Password Rules Generator(https://developer.apple.com/password-rules/) helps you craft
 the somewhat esoteric syntax. It also lets you download password examples for you to build into your tests to prove
 that both your front and backends can accept the passwords.
-
-I've created a [CodeSandbox demo](https://codesandbox.io/s/password-rules-demo-029h5) of the feature. A quick test
-shows that 1Password honours the min/max lengths. Hopefully the most popular Password Managers also honour it.
