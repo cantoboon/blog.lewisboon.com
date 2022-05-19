@@ -1,10 +1,23 @@
 <style>
-    #nav a {
+    .site-title a {
         text-decoration: none;
+        font-size: 1.75rem;
+        transition: color 0.15s;
     }
-    #nav a:hover {
+    .site-title a:hover {
         color: grey;
     }
+
+    .nav-link span {
+        text-decoration: none;
+        color: black;
+        font-size: 1.25rem;
+        transition: box-shadow .215s;
+    }
+    .nav-link span:hover {
+        box-shadow: 0 1.25px 0 #000
+    }
+    
     #home-jumbotron {
         background-color: inherit;
     }
@@ -17,6 +30,9 @@
     }
     .tag-btn {
         margin-bottom: 0.3em;
+    }
+    body {
+        background-color: #f8f8f8;
     }
     img {
         max-width: 100%;
