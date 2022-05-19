@@ -72,7 +72,7 @@ lewisboon@Lewis-PC:~$ docker inspect dd4b | jq .[].NetworkSettings.Ports
 ### Get labels
 
 ```bash
-lewisboon@Lewis-RyzenPC:~$ docker inspect <container> | jq .[].Config.Labels
+lewisboon@Lewis-PC:~$ docker inspect <container> | jq .[].Config.Labels
 {
   "desktop.docker.io/wsl-distro": "Ubuntu-20.04",
   "org.opencontainers.image.created": "2022-01-05T23:05:34.043Z",
