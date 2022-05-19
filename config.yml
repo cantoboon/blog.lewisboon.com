@@ -1,6 +1,6 @@
 baseURL: "https://blog.lewisboon.com/"
 languageCode: "en-gb"
-title: "lewisboon blog"
+title: "Lewis Boon's Blog"
 
 permalinks:
   blog: "/:filename/"
@@ -29,8 +29,7 @@ params:
 
 markup:
   highlight:
-    lineNos: true
-    anchorLineNos: true
+    lineNos: false
     style: github
     noClasses: false
     
