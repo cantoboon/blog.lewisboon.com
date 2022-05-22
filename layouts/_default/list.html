@@ -1,12 +1,17 @@
 {{ define "main" }}
 
-<main id="main" class="col-md-8 pt-3">
+<main id="main" class="col-md-10 mt-3">
   {{ range .Pages.ByPublishDate.Reverse }}
 
-    <div class="border rounded p-3 mb-3">
-      <a class="font-125" href="{{ .RelPermalink }}"><h4>{{ .Title }}</h4></a>
-      {{ partial "date-and-tags.html" . }}
-      {{ partial "content.html" . }}
+    <div class="border-bottom p-4">
+      <a class="font-125" href="{{ .RelPermalink }}">
+        <div class="blog-list-title">
+          <h4>{{ .Title }}</h4>
+        </div>
+        <div style="float: right;">
+          <span class="publish-date">{{ .PublishDate.Format "Jan 2006"}}</span>
+        </div>
+      </a>
     </div>
 
   {{ end }}
